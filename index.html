@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./logos/TsazLogo.png">
+  <link rel="stylesheet" href="style.css" />
+  <title>Tsaz - Home</title>
+</head>
+
+<body>
+  <nav class="menu-container">
+    <!-- burger menu -->
+    <input type="checkbox" aria-label="Toggle menu" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!-- logo -->
+    <a href="./index.html" class="menu-logo">
+      <img src="https://cdn.discordapp.com/attachments/839189307637497890/1101226645345554442/TsazLogo.png"
+        alt="My Awesome Website" />
+    </a>
+
+    <!-- menu items -->
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="./index.html"> Home </a>
+        </li>
+        <li>
+          <a href="./pages/market.html"> Market </a>
+        </li>
+
+        <li>
+          <a href="./pages/support.html"> Support </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a onclick="WorkInProgressPopup()"> Sign-up </a>
+        </li>
+        <li>
+          <a onclick="WorkInProgressPopup()"> Login </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br />
+  <center>
+    <h1>Benvenuto in T.S.A.Z</h1>
+  </center>
+  <center>
+    <h2>
+      <b>TSAZ</b> <i>(Tiny services from a to z)</i> è un servizio di
+      informatica e tecnologia ideato con l'intento di sviluppare funzioni e
+      software facili ed utili da utilizzare<br /><br /><b>TSAZ</b> contiene
+      vari servizi (software, servizi online, ecc) per visitarli basta andare
+      su Market
+    </h2>
+  </center>
+  <center>
+    <button class="btn" onclick="window.open('./pages/market.html','_self')"
+      href="pages/market.html">Market</button>
+    <br /><button class="btn" onclick="window.open('./pages/support.html', '_self')">Support</button>
+  </center>
+</body>
+
+</html>

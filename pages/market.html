@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <script src="./market.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../logos/TsazLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <title>Tsaz - Market</title>
+  </head>
+
+  <body>
+    <nav class="menu-container">
+      <!-- burger menu -->
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!-- logo -->
+      <a href="../index.html" class="menu-logo">
+        <img
+          src="https://cdn.discordapp.com/attachments/839189307637497890/1101226645345554442/TsazLogo.png"
+          alt="My Awesome Website"
+        />
+      </a>
+
+      <!-- menu items -->
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="../index.html"> Home </a>
+          </li>
+          <li>
+            <a href="./market.html"> Market </a>
+          </li>
+         
+          <li>
+            <a href="./support.html"> Support </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a onclick="WorkInProgressPopup()"> Sign-up </a>
+          </li>
+          <li>
+            <a onclick="WorkInProgressPopup()"> Login </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <center>
+      <h1>Market</h1>
+    </center>
+
+    <br />
+    <br />
+    <div class="elenco_background">
+      <center>
+        <h2 class="elenco_titolo">Exnen</h2>
+      </center>
+      <center>
+        <h3 class="elenco_description"><b>Linguaggio di programmazione</b> semplice creato con NodeJS per chi vuole imparare le basi della programmazione </h3>
+      </center>
+      <center>
+        <div>Prezzo: <b>€0.00</b></div>
+      </center>
+      <br />
+      <br />
+      <center><button class="btn" onclick="window.open('./download/exnen.html','_self')">Acquista</button></center>
+    </div>
+
+    <div class="elenco_background">
+      <center>
+        <h2 class="elenco_titolo">Arkivys</h2>
+      </center>
+      <center>
+        <h3 class="elenco_description">Compressore per cartelle (.zip) per computer con sistema operativo Windows, facile da usare ,che include antivirus e riparatore</h3>
+      </center>
+      <center>
+        <div>Prezzo: <b>€0.00</b></div>
+      </center>
+      <br />
+      <br />
+      <center><button class="btn" onclick="window.open('./download/arkivys.html','_self')" >Acquista</button></center>
+    </div>
+  </body>
+</html>
