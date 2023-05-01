@@ -121,3 +121,9 @@ function WorkInProgressPopup() {
     document.getElementsByTagName("head")[0].appendChild(script);
   }
 }
+
+
+
+function feedBackPOPUP() {
+  let popup = window.open("./pages/feedback.html", "Feedback", 'width=800,height=500')
+}
