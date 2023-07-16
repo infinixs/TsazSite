@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
 
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif
 }
 
 .menu-container {
@@ -265,7 +265,7 @@ h1 {
   border: 2px solid #0066cc;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   border-radius: 8px;
-  transition: 1000ms;
+  transition: all 0.3s ease-in-out;
   transform: translateY(0);
   display: flex;
   flex-direction: row;
@@ -275,14 +275,15 @@ h1 {
 }
 
 .btn:hover {
-  transition: 1000ms;
   padding: 10px 50px;
-  transform: translateY(-0px);
-  background-color: #fff;
-  color: #0066cc;
-  border: solid 2px #0066cc;
+  transform: scale(1.2);
+  background-color: #00bd23;
+  color: #2f6c00;
+  border: solid 2px #2f6c00;
 }
-
+div {
+  padding: 13px;
+}
 .elenco_background {
   -webkit-box-shadow: 9px 6px 23px 1px rgba(0, 0, 0, 0.8);
   box-shadow: 9px 6px 23px 1px rgba(0, 0, 0, 0.8);
@@ -295,6 +296,11 @@ h1 {
   margin-left: 55px;
   float:left;
   margin-top: 16px;
+  transition: all 0.2s ease-in-out
+}
+.elenco_background:hover {
+  transform: scale(1.3);
+  z-index:9999;
   
 }
 .elenco_titolo {

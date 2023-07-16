@@ -127,3 +127,53 @@ function WorkInProgressPopup() {
 function feedBackPOPUP() {
   let popup = window.open("./pages/feedback.html", "Feedback", 'width=800,height=500')
 }
+
+// Creazione dinamica dell'elemento audio
+function playAudioOnHover(audioSrc) {
+  const audio = new Audio(audioSrc);
+  let canPlay = false;
+
+  document.addEventListener('click', () => {
+    canPlay = true;
+  });
+
+  return function(element) {
+    element.addEventListener('mouseover', () => {
+      if (canPlay) {
+        audio.currentTime = 0;
+        audio.play();
+        console.log("ciao");
+      }
+    });
+  };
+}
+
+function playAudioOnClick(audioSrc) {
+  const audio = new Audio(audioSrc);
+  let canPlay = false;
+
+  document.addEventListener('click', () => {
+    canPlay = true;
+  });
+
+  return function(element) {
+    element.addEventListener('click', () => {
+      if (canPlay) {
+        audio.currentTime = 0;
+        audio.play();
+        console.log("ciao");
+      }
+    });
+  };
+}
+
+const playOnHover = playAudioOnHover('./audio/select.mp3');
+const playOnClick = playAudioOnClick('./audio/click.mp3');
+
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.getElementsByClassName('btn');
+  for (let i = 0; i < buttons.length; i++) {
+    playOnHover(buttons[i]);
+    playOnClick(buttons[i]);
+  }
+});
